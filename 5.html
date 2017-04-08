@@ -1,0 +1,21 @@
+
+<html>
+ <head>
+ 	<title>js 7-g</title>
+ </head>
+<body>
+  <form> 
+  	<label> MAX 10 CHARACTERS </label>
+  	<textarea id="textarea" maxlength="10"></textarea>
+  	<span id="rchars">10</span>
+  	Tanbalar max sanmen wigary
+  </form>
+<script>
+var maxlength =10;
+$('textarea').keyup(function() {
+var textlen = maxlength -$(this).val().length;
+$('#rchars').text(textlen);
+});
+</script
+</body>
+</html>
